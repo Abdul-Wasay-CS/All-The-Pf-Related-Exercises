@@ -27,9 +27,14 @@ button:hover{
     background-color: hsl(263, 39%, 59%);
     color: hsl(0, 33%, 3%);
     border-radius: 15px;
+    padding-left: 20px ;
+    padding-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 60px;
 }
 #AboutmeHead{
     color: rgb(31, 31, 180);
 }
+
 
 
