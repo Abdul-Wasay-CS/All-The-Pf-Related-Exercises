@@ -1,12 +1,17 @@
+
+html{
+    background-color: rgb(17, 200, 206);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
 #headerid{
     background-color: rgb(194, 228, 72);
-    color: rgb(25, 18, 131);
+    color: rgb(11, 157, 224);
     text-align: center;
     padding-left: 40px ;
     padding-right: 40px;
     padding-top: 20px;
     padding-bottom: 60px;
-    border-radius:20px;
+    border-radius:8px;
 }
 button{
     text-align: center;
@@ -24,17 +29,68 @@ button:hover{
     border: 15px;
 }
 #Aboutmeid{
-    background-color: hsl(263, 39%, 59%);
-    color: hsl(0, 33%, 3%);
-    border-radius: 15px;
+    color: rgb(22, 224, 107);
+    background-color:hsl(263, 39%, 59%);
+    border-radius: 8px;
     padding-left: 20px ;
     padding-right: 40px;
     padding-top: 20px;
     padding-bottom: 60px;
+    h1{
+        color: blue;
+    }
 }
 #AboutmeHead{
     color: rgb(31, 31, 180);
 }
-
-
+#Projectsid{
+    color: rgb(11, 157, 224);
+    background-color: rgb(81, 206, 102);
+    border-radius: 8px;
+    padding-left: 20px ;
+    padding-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 60px;
+    h1{
+        color: blue;
+    }
+    li{
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color:darkslategray
+    }
+    p{
+        color: rgb(112, 198, 226);  
+    }
+}
+#Skillsid{
+    color: rgb(11, 157, 224);
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(228, 40, 80);
+    border-radius: 8px;
+    padding-left: 20px ;
+    padding-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 60px;
+    h1{
+        color: blue;
+    }
+    li{
+        color: rgb(28, 231, 96);
+    }
+}
+#Contactsid{
+    color: rgb(11, 157, 224);
+    background-color: rgb(240, 110, 18);
+    border-radius: 8px;
+    padding-left: 20px ;
+    padding-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 60px;
+    h1{
+        color: blue;
+    }
+    p{
+        color:rgb(138, 235, 12)
+    }
+}
 
