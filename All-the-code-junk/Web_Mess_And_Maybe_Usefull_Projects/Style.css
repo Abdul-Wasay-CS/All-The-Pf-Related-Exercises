@@ -1,0 +1,35 @@
+#headerid{
+    background-color: rgb(194, 228, 72);
+    color: rgb(25, 18, 131);
+    text-align: center;
+    padding-left: 40px ;
+    padding-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 60px;
+    border-radius:20px;
+}
+button{
+    text-align: center;
+    background-color: rgb(75, 144, 201);
+    border-radius: 9px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+button:hover{
+    background-color:rgb(75, 100, 201);
+    color: tomato;
+    transition-delay: 30ms;
+    border: 15px;
+}
+#Aboutmeid{
+    background-color: hsl(263, 39%, 59%);
+    color: hsl(0, 33%, 3%);
+    border-radius: 15px;
+}
+#AboutmeHead{
+    color: rgb(31, 31, 180);
+}
+
+
