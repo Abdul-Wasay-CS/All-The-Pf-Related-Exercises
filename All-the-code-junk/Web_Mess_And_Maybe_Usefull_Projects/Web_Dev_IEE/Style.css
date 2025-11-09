@@ -1,12 +1,11 @@
 
 html{
-    background-color: rgb(17, 200, 206);
+    background-color: rgb(158, 81, 81);
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     scroll-behavior: smooth;
 }
 #headerid{
-    background-color: rgb(194, 228, 72);
-    color: rgb(11, 157, 224);
+    background-color: rgba(46, 189, 94, 0.479);
     text-align: center;
     padding-left: 40px ;
     padding-right: 40px;
@@ -17,8 +16,9 @@ html{
 button{
     border-radius: 400px;
     text-align: center;
-    font-size: 10px;
-    background-color: rgb(75, 144, 201);
+    font-size: 14px;
+    background-color: rgba(46, 189, 94, 0.479);
+    border-color: rgba(46, 189, 94, 0.479);
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 10px;
@@ -28,15 +28,13 @@ button:active{
     background-color:hsl(207, 54%, 20%);
 }
 button:hover{
-    background-color:rgb(75, 100, 201);
-    color: tomato;
-    transition-delay: 30ms;
+    background-color:rgba(57, 107, 201, 0.575);
+    color: rgb(46, 70, 75);
     border: 15px;
 }
 #Aboutmeid{
     text-align: center;
-    color: rgb(22, 224, 107);
-    background-color:hsl(263, 39%, 59%);
+    color: rgb(28, 32, 37);
     border-radius: 8px;
     padding-left: 20px ;
     padding-right: 40px;
@@ -50,44 +48,43 @@ button:hover{
     color: rgb(31, 31, 180);
 }
 #Projectsid{
+    background-color: rgba(46, 189, 94, 0.479);
     text-align: justify;
-    color: rgb(11, 157, 224);
-    background-color: rgb(81, 206, 102);
+    color: rgb(12, 13, 14);
     border-radius: 8px;
     padding-left: 20px ;
     padding-right: 40px;
     padding-top: 20px;
     padding-bottom: 60px;
     h1{
-        color: blue;
+        color:rgb(31, 31, 180);
     }
     li{
         font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        color:darkslategray
+        color:rgb(31, 44, 44)
     }
     p{
-        color: rgb(112, 198, 226);  
+        color: rgb(18, 25, 27);  
     }
 }
 #Skillsid{
-    color: rgb(11, 157, 224);
+    color: rgb(12, 13, 14);
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(228, 40, 80);
     border-radius: 8px;
     padding-left: 20px ;
     padding-right: 40px;
     padding-top: 20px;
     padding-bottom: 60px;
     h1{
-        color: blue;
+        color: rgb(31, 31, 180);
     }
     li{
-        color: rgb(28, 231, 96);
+        color: rgb(37, 32, 43);
     }
 }
 #Contactsid{
+    background-color: rgba(46, 189, 94, 0.479);
     color: rgb(11, 157, 224);
-    background-color: rgb(240, 110, 18);
     border-radius: 8px;
     padding-left: 20px ;
     padding-right: 40px;
@@ -98,7 +95,7 @@ button:hover{
     }
     p{
         text-align: right;
-        color:rgb(138, 235, 12)
+        color:rgb(36, 35, 48)
     }
 }
 
