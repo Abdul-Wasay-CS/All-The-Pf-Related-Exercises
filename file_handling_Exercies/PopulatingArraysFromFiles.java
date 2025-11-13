@@ -11,23 +11,23 @@ public class PopulatingArraysFromFiles {
             
 
         try {
-
             FileInputStream fis = new FileInputStream("accounts.txt");
             Scanner fileScanner = new Scanner(fis);
+            while(fileScanner.hasNext()){    
+                for(int i=0;i<accountsData.length;i++){
+                    for(int j=0;j<accountsData[i].length;j++){
+                        accountsData[i][j] = fileScanner.nextInt();
+                    }
+                }
 
-            for(int i=0;i<accountsData.length;i++){
-                for(int j=0;j<accountsData[i].length;j++){
-                    accountsData[i][j] = fileScanner.nextInt();
+                for(int data[]:accountsData){
+                    for(int actualData:data){
+                        System.out.print(actualData+" ");
+                    }
+                    System.out.println();
                 }
             }
-
-            for(int data[]:accountsData){
-                for(int actualData:data){
-                    System.out.print(actualData+" ");
-                }
-                System.out.println();
-            }
-        } catch (Exception e) {
+        }catch(Exception e) {
             System.out.println("Error: " + e.getMessage());
         }
 
