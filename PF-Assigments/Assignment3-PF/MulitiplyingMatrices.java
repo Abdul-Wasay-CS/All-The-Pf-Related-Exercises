@@ -67,30 +67,23 @@ public class MulitiplyingMatrices
 	public static int[][] multiplyMatrices(int[][] matrix1, int[][] matrix2)
 	{
 		// assumes they are multiplyable
+		int r1 = matrix1.length;
+		int c1 = matrix1[0].length;
+		int c2 = matrix2[0].length;
 		int[][] productMatrix = new int[matrix1.length][matrix2[0].length];
 
-		for(int i=0; i<productMatrix.length; i++)
+		for(int i=0; i<r1; i++)
 		{
-			for(int j = 0; j<productMatrix[i].length; j++)
+			for(int j = 0; j<c2; j++)
 			{
-				productMatrix[i][j] = multiplyRowAndColoumn(i,j,matrix1,matrix2);
+				int sum = 0;
+				for(int k=0; k<c1; k++)
+					sum += matrix1[i][k] * matrix2[k][j];
+				productMatrix[i][j] = sum;
 			}
 		}
 
 		return productMatrix;
 	}
-	public static int multiplyRowAndColoumn(int i,int j, int[][] matrix2, int[][] matrix1)
-	{
-		//i remains same, and j increments one after each interation
-		//product[0][0]=matrix1[i][j]*matrix2[j][i]+matrix1[0][1]*matrix2[1][0]+matrix1[0][2]*matrix2[2][0];
-		int sum = 0;
 
-		for(int s = 0; s<matrix2.length; s++)
-		{
-			int product = matrix1[i][s]*matrix2[s][j];
-			sum += product;
-		}
-
-		return sum;
-	}
 }
