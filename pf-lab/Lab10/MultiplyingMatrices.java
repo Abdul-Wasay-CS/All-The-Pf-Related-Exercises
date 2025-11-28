@@ -1,68 +1,50 @@
 import java.util.Scanner;
 import java.util.Arrays;
 
-public class MulitiplyingMatrices
+public class MultiplyingMatrices
 {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 
-		System.out.print("Enter the number of rows of Matrix 1: ");
-		int r1 = input.nextInt();
+		int[][] matrix1 = new int[3][4];
 
-		System.out.print("Enter the number of coloumns of matrix 1: ");
-		int c1 = input.nextInt();
-		int[][] matrix1 = new int[r1][c1];
 
 		//matrix 1 inputs
+		System.out.printf("%40s","Matrix 1 Elements\n");
 		for(int i =0 ; i<matrix1.length; i++)
 		{
+			System.out.printf("Enter the values of row %d:",i+1);
 			for(int j=0; j<matrix1[i].length; j++)
 			{
-				System.out.printf("Enter value number %d of %d row :",j,i);
 				matrix1[i][j] = input.nextInt();
 			}
 			System.out.println();
 		}
 
-		System.out.print("Enter the number of row of Matrix 2: ");
-		int r2 = input.nextInt();
-
-		System.out.print("Enter the number of coulumn of Matrix 2: ");
-		int c2 = input.nextInt();
-
-		int[][] matrix2 = new int[r2][c2];
+		int[][] matrix2 = new int[4][3];
 
 		//matrix 2 inputs
 
+		System.out.printf("%40s","Matrix 2 Elements\n");
 		for(int i =0 ; i<matrix2.length; i++)
 		{
+			System.out.printf("Enter values of  row %d :",i+1);
 			for(int j=0; j<matrix2[i].length; j++)
 			{
-				System.out.printf("Enter value number %d of %d row :",j,i);
 				matrix2[i][j] = input.nextInt();
 			}
 			System.out.println();
 		}
-
-		if(c1 == r2)
+		System.out.println("The New Matrix is : ");
+		int[][] newMatrix = multiplyMatrices(matrix1, matrix2);
+		for(int i =0; i<newMatrix.length; i++)
 		{
-			System.out.println("The New Matrix is : ");
-			int[][] newMatrix = multiplyMatrices(matrix1, matrix2);
-			for(int i =0; i<newMatrix.length; i++)
+			for(int j=0; j<newMatrix[i].length; j++)
 			{
-				for(int j=0; j<newMatrix[i].length; j++)
-				{
-					System.out.printf("%-3d",newMatrix[i][j]);
-				}
-				System.out.println();
+				System.out.printf("%-5d",newMatrix[i][j]);
 			}
+			System.out.println();
 		}
-		else
-		{
-			System.out.println("The matrixes are not Multiplyable");
-		}
-
-
 	}//main
 
 	public static int[][] multiplyMatrices(int[][] matrix1, int[][] matrix2)
