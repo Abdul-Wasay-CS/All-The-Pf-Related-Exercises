@@ -20,7 +20,7 @@ public class StoreDataInFile
             int marks = input.nextInt();
             input.nextLine();
             
-            if(marks == 0)
+            if(studentMarks.get(i) == 0)
                 break;
             studentName.add(name);
             studentMarks.add(marks);
@@ -31,13 +31,11 @@ public class StoreDataInFile
 
         try
         {
-            FileOutputStream file = new FileOutputStream("students.txt",true);
-            PrintStream writer = new PrintStream(file);
+            FileOutputStream file = new FileOutputStream("students.txt");
+            Ouutu
             for(int j =0; j<studentMarks.size(); j++)
             {
-                writer.println(studentRno.get(j));
-                writer.println(studentName.get(j));
-                writer.println(studentMarks.get(j));
+                
             }
         }
         catch( IOException e)

@@ -1,0 +1,12 @@
+The quick brown fox jumps over the lazy dog.
+Leading and trailing spaces   
+Multiple    spaces    and,,,punctuation.
+don't state-of-the-art C++ 123abc
+café naïve 
+a bb ccc
+antidisestablishmentarianism
+The-longest-word-at-start is here.
+The longest-word-in-middle-position is here.
+Here is the longest-word-at-the-end.
+
+This is the last line.
